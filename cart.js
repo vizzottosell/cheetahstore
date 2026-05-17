@@ -200,7 +200,7 @@ if (checkoutBtn) {
       if (!message) return;
 
       window.open(
-        `https://wa.me/55SEUNUMERO?text=${message}`,
+        `https://wa.me/5547976028986?text=${message}`,
         "_blank"
       );
     }

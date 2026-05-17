@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta
+    name="description"
+    content="Cheetah Puffs - experiência premium, moderna e sofisticada."
+  />
+
+  <title>Cheetah Puffs</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@500;600;700&display=swap"
+rel="stylesheet"
+/>
+</head>
+
+<body>
+
+  <!-- Loading -->
+  <div id="loader" class="loader-wrapper">
+    <div class="loader-logo">
+
+  <img
+    src="assets/cheetah-loader.gif"
+    alt="Cheetah Loader"
+    class="loader-gif"
+  >
+
+  <h2>
+    Cheetah Puffs
+  </h2>
+
+</div>
+  </div>
+
+  <!-- Age Gate -->
+  <div id="ageGate" class="age-gate">
+    <div class="age-modal">
+      <div class="age-icon">🐆</div>
+
+      <h2>Você possui 18 anos ou mais?</h2>
+
+      <p>
+        O acesso à Cheetah Puffs é restrito para maiores de idade.
+      </p>
+
+      <div class="age-buttons">
+        <button class="primary-btn" onclick="enterSite()">
+          Sim, entrar
+        </button>
+
+        <button class="secondary-btn" onclick="leaveSite()">
+          Não
+        </button>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Header -->
+  <header class="header" id="header">
+
+    <div class="logo">
+
+  <img
+    src="assets/logo.png"
+    alt="Cheetah Puffs"
+    class="logo-img"
+  />
+
+  <span>Cheetah Puffs</span>
+
+</div>
+
+    <button class="menu-toggle" id="menuToggle">
+      ☰
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Início</a>
+      <a href="#products">Produtos</a>
+      <a href="#benefits">Benefícios</a>
+      <a href="#reviews">Avaliações</a>
+      <a href="#faq">FAQ</a>
+      <a href="carrinho.html">Carrinho</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-video-section" id="home">
+
+  <!-- VIDEO BACKGROUND -->
+
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    class="hero-bg-video"
+  >
+    <source
+      src="assets/hero-video.mp4"
+      type="video/mp4"
+    />
+  </video>
+
+  <!-- OVERLAY -->
+
+  <div class="hero-overlay"></div>
+
+  <!-- CONTENT -->
+
+  <div class="hero-video-content fade-up">
+
+    <span class="hero-badge">
+      Premium Lifestyle • Cheetah Puffs
+    </span>
+
+    <h1>
+      Elegância,
+      <br>
+      experiência
+      premium.
+    </h1>
+
+    <p>
+      Descubra uma experiência moderna,
+      sofisticada e exclusiva.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a
+        href="produtos.html"
+        class="primary-btn"
+      >
+        Explorar coleção
+      </a>
+
+      <a
+        href="https://wa.me/55SEUNUMERO"
+        class="secondary-btn"
+        target="_blank"
+      >
+        WhatsApp
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- Benefits -->
+  <section class="benefits" id="benefits">
+
+    <div class="benefit-card fade-up">
+      <div class="benefit-icon">⚡</div>
+      <h3>Entrega rápida</h3>
+      <p>Atendimento eficiente e rápido.</p>
+    </div>
+
+    <div class="benefit-card fade-up">
+      <div class="benefit-icon">🔒</div>
+      <h3>Compra segura</h3>
+      <p>Experiência confiável e organizada.</p>
+    </div>
+
+    <div class="benefit-card fade-up">
+      <div class="benefit-icon">💬</div>
+      <h3>Atendimento Premium</h3>
+      <p>Suporte rápido via WhatsApp.</p>
+    </div>
+
+  </section>
+
+  <!-- Produtos -->
+  <section class="products-section" id="products">
+
+    <div class="section-header">
+      <span class="section-tag">
+        Mais vendidos
+      </span>
+
+      <h2>Favoritos da Cheetah</h2>
+
+      <p>
+        Conheça os produtos mais procurados.
+      </p>
+    </div>
+
+    <div id="productsGrid" class="products-grid"></div>
+    
+
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews" id="reviews">
+
+    <div class="section-header">
+      <span class="section-tag">
+        Avaliações
+      </span>
+
+      <h2>Clientes satisfeitos</h2>
+    </div>
+
+    <div class="reviews-grid">
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+
+        <p>
+          “Atendimento excelente e entrega muito rápida.”
+        </p>
+
+        <strong>Lucas</strong>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+
+        <p>
+          “Design incrível e experiência muito boa.”
+        </p>
+
+        <strong>Matheus</strong>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+
+        <p>
+          “Loja muito organizada e moderna.”
+        </p>
+
+        <strong>Pedro</strong>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+
+    <div class="section-header">
+      <span class="section-tag">
+        FAQ
+      </span>
+
+      <h2>Perguntas frequentes</h2>
+    </div>
+
+    <div class="faq-container">
+
+      <details>
+        <summary>
+          Como funciona a entrega?
+        </summary>
+
+        <p>
+          Consulte disponibilidade via WhatsApp.
+        </p>
+      </details>
+
+      <details>
+        <summary>
+          Quais formas de pagamento?
+        </summary>
+
+        <p>
+          Consulte diretamente no atendimento.
+        </p>
+      </details>
+
+      <details>
+        <summary>
+          O atendimento é rápido?
+        </summary>
+
+        <p>
+          Sim, atendimento ágil via WhatsApp.
+        </p>
+      </details>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <div class="footer-content">
+
+      <div>
+        <h3>Cheetah Puffs</h3>
+
+        <p>
+          Premium lifestyle • experiência moderna.
+        </p>
+      </div>
+
+      <div>
+        <h4>Links</h4>
+
+        <a href="#home">Início</a>
+        <a href="#products">Produtos</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div>
+        <h4>Contato</h4>
+
+        <a href="https://wa.me/55SEUNUMERO">
+          WhatsApp
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 Cheetah Puffs
+    </div>
+
+  </footer>
+
+  <!-- WhatsApp -->
+  <a
+    href="https://wa.me/55SEUNUMERO"
+    class="whatsapp-btn"
+    target="_blank"
+  >
+    💬
+  </a>
+
+  <script type="module" src="app.js"></script>
+
+</body>
+</html>
